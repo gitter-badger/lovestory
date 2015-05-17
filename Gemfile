@@ -12,6 +12,7 @@ gem 'high_voltage'
 
 gem 'figaro'
 gem 'omniauth-facebook'
+gem 'fb_graph'
 
 group :development, :test do
   gem 'byebug'
