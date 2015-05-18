@@ -1,3 +1,2 @@
 [dciy.commands]
-prepare = ["script/bootstrap"]
 cibuild = ["script/cibuild"]
