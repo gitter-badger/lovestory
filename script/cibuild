@@ -1,0 +1,8 @@
+#!/bin/bash
+
+RAILS_ENV="development"
+RUBY_VERSION="2.2.1"
+RUBY_GEMSET="lovestory"
+
+bash -l -c "rvm use $RUBY_VERSION@$RUBY_GEMSET && script/bootstrap"
+bash -l -c "rvm use $RUBY_VERSION@$RUBY_GEMSET && bundle exec rake spec"
