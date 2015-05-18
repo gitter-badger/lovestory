@@ -1,6 +1,5 @@
 #!/bin/bash
 
-echo "test"
 bundle install
 bundle exec rake db:migrate
 
