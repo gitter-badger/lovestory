@@ -4,5 +4,5 @@ RAILS_ENV="development"
 RUBY_VERSION="2.2.2"
 RUBY_GEMSET="lovestory"
 
-bash -l -c "rvm use $RUBY_VERSION@$RUBY_GEMSET --create && script/bootstrap"
+bash -l -c "RAILS_ENV=$RAILS_ENV; rvm use $RUBY_VERSION@$RUBY_GEMSET --create; script/bootstrap"
 bash -l -c "rvm use $RUBY_VERSION@$RUBY_GEMSET --create && bundle exec rake spec"
